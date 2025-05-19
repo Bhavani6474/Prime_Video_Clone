@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Prime Video Clone</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <header>
+    <h1>PrimeVideo</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">TV Shows</a>
+      <a href="#">Movies</a>
+      <a href="#">My List</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Featured: The Adventure Begins</h2>
+    <button onclick="openModal('videos/sample.mp4')">Watch Now</button>
+  </section>
+
+  <main>
+    <h3>Popular Now</h3>
+    <div class="movie-grid">
+      <div class="movie" onclick="openModal('Aashiqui-2.mp4')">
+        <img src="image3.jpg" alt="My Fault"/>
+        <p>Aashiqui-2</p>
+      </div>
+      <div class="movie" onclick="openModal('YeMayaChesave.mp4')">
+        <img src="image2.jpg" alt="Ye Maya Chesave"/>
+        <p>Ye Maya Chesave</p>
+      </div>
+      <div class="movie" onclick="openModal('MyFault.mp4')">
+        <img src="image1.jpg" alt="Ye Maya Chesave"/>
+        <p>My Fault</p>
+      </div>
+      <div class="movie" onclick="openModal('YeMayaChesave.mp4')">
+        <img src="bhavani.jpg" alt="Ye Maya Chesave"/>
+        <p>bhavani</p>
+      </div>
+      <!-- Add more movie items -->
+    </div>
+  </main>
+
+  <div id="modal" class="modal">
+    <span onclick="closeModal()" class="close-btn">&times;</span>
+    <video id="modalVideo" controls autoplay></video>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
